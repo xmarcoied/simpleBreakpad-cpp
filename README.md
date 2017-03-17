@@ -15,6 +15,13 @@ simple c++ application integrated with the crashrepoting lib google breakpad
 ``` $ ./configure && make  ```
 
 
-3 - Linking the generated library with the app.cpp and complie them
+3 - Linking the generated library with the app.cpp and compile them
 
 ``` $ g++ -std=c++11 -g -I google-breakpad/src/ -o app app.cpp google-breakpad/src/client/linux/libbreakpad_client.a -lpthread ```
+
+
+4 - run the buggy application to generate the minidumps 
+
+``` ./app ```
+
+Now , you can find the dump in the dumps folder .
