@@ -22,6 +22,6 @@ simple c++ application integrated with the crashrepoting lib google breakpad
 
 4 - run the buggy application to generate the minidumps 
 
-``` & make run ```
+``` $ make run ```
 
 Now , you can find the dump in the dumps folder .
