@@ -8,8 +8,8 @@ simple c++ application integrated with the crashrepoting lib google breakpad
 
 2-a - downloading the breakpad library
 
-``` $ git clone https://chromium.googlesource.com/breakpad/breakpad ```
 
+``` $ git clone https://chromium.googlesource.com/breakpad/breakpad ```
 
 2-b - build and configure the breakpad library
 
