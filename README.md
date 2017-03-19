@@ -1,5 +1,6 @@
 # simpleBreakpad-cpp
 simple c++ application integrated with the crashrepoting lib google breakpad
+
 (check the wiki [https://github.com/xMarcoied/simpleBreakpad-cpp/wiki] for more details about the project.
 # steps :
 1 - clone the github repo 
