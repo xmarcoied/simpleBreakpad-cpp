@@ -1,0 +1,145 @@
+Operating system: Linux
+                  0.0.0 Linux 3.19.0-15-generic #15-Ubuntu SMP Thu Apr 16 23:32:37 UTC 2015 x86_64
+CPU: amd64
+     family 6 model 37 stepping 5
+     4 CPUs
+
+GPU: UNKNOWN
+
+Crash reason:  SIGSEGV
+Crash address: 0x0
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  app + 0x1e6f
+    rax = 0x0000000000000000   rdx = 0x0000000000618900
+    rcx = 0x0000000000000000   rbx = 0x0000000000000000
+    rsi = 0x0000000000000000   rdi = 0x0000000000618900
+    rbp = 0x00007ffc93a66840   rsp = 0x00007ffc93a66840
+     r8 = 0x0000000000000000    r9 = 0x0000000001e47c40
+    r10 = 0x0000000000000131   r11 = 0x00007f98b6eca3b0
+    r12 = 0x0000000000401d30   r13 = 0x00007ffc93a66a80
+    r14 = 0x0000000000000000   r15 = 0x0000000000000000
+    rip = 0x0000000000401e6f
+    Found by: given as instruction pointer in context
+
+    Stack contents:
+     00007ffc93a66840 a0 69 a6 93 fc 7f 00 00 3b 1f 40 00 00 00 00 00  .i......;.@.....
+    Possible instruction pointers:
+
+ 1  app + 0x1f3b
+    rbp = 0x00007ffc93a669a0   rsp = 0x00007ffc93a66850
+    rip = 0x0000000000401f3b
+    Found by: previous frame's frame pointer
+
+    Stack contents:
+     00007ffc93a66850 88 6a a6 93 fc 7f 00 00 00 00 00 00 01 00 00 00  .j..............
+     00007ffc93a66860 b8 69 a6 93 fc 7f 00 00 01 7c 0e b7 98 7f 00 00  .i.......|......
+    Possible instruction pointers:
+
+ 2  ld-2.21.so + 0xac01
+    rbp = 0x00007ffc93a669a0   rsp = 0x00007ffc93a66870
+    rip = 0x00007f98b70e7c01
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a66870 38 7c e4 01 00 00 00 00 c0 a0 2d b7 98 7f 00 00  8|........-.....
+     00007ffc93a66880 01 00 00 00 ff ff ff ff 38 7c e4 01 00 00 00 00  ........8|......
+     00007ffc93a66890 18 e2 eb b6 98 7f 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a668a0 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+     00007ffc93a668b0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a668c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a668d0 00 00 00 00 00 00 00 00 f0 68 a6 93 fc 7f 00 00  .........h......
+     00007ffc93a668e0 00 00 00 00 00 00 00 00 26 1e 40 00 00 00 00 00  ........&.@.....
+    Possible instruction pointers:
+
+ 3  app + 0x1e26
+    rbp = 0x00007ffc93a669a0   rsp = 0x00007ffc93a668f0
+    rip = 0x0000000000401e26
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a668f0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66900 01 00 00 00 ff ff ff ff 38 7c e4 01 00 00 00 00  ........8|......
+     00007ffc93a66910 e8 7c e4 01 00 00 00 00 e8 7c e4 01 00 00 00 00  .|.......|......
+     00007ffc93a66920 ff ff ff ff ff ff ff ff 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66930 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66940 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66950 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66960 03 00 00 00 04 00 00 00 68 69 a6 93 fc 7f 00 00  ........hi......
+     00007ffc93a66970 68 69 a6 93 fc 7f 00 00 78 69 a6 93 fc 7f 00 00  hi......xi......
+     00007ffc93a66980 78 69 a6 93 fc 7f 00 00 00 aa 22 82 6c 1b ba c2  xi........".l...
+     00007ffc93a66990 80 6a a6 93 fc 7f 00 00 00 00 00 00 00 00 00 00  .j..............
+     00007ffc93a669a0 c0 23 41 00 00 00 00 00                          .#A.....        
+    Possible instruction pointers:
+
+ 4  app + 0x123c0
+    rsp = 0x00007ffc93a669a8   rip = 0x00000000004123c0
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a669a8 40 ca 57 b6 98 7f 00 00                          @.W.....        
+    Possible instruction pointers:
+
+ 5  libc-2.21.so + 0x20a40
+    rsp = 0x00007ffc93a669b0   rip = 0x00007f98b657ca40
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a669b0 00 1c 01 00 00 00 00 00 88 6a a6 93 fc 7f 00 00  .........j......
+     00007ffc93a669c0 00 00 00 00 01 00 00 00 77 1e 40 00 00 00 00 00  ........w.@.....
+    Possible instruction pointers:
+
+ 6  app + 0x1e77
+    rsp = 0x00007ffc93a669d0   rip = 0x0000000000401e77
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a669d0 00 00 00 00 00 00 00 00 82 12 51 91 61 95 c1 73  ..........Q.a..s
+     00007ffc93a669e0 30 1d 40 00 00 00 00 00                          0.@.....        
+    Possible instruction pointers:
+
+ 7  app + 0x1d30
+    rsp = 0x00007ffc93a669e8   rip = 0x0000000000401d30
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a669e8 80 6a a6 93 fc 7f 00 00 00 00 00 00 00 00 00 00  .j..............
+     00007ffc93a669f8 00 00 00 00 00 00 00 00 82 12 b1 05 af b2 38 8c  ..............8.
+     00007ffc93a66a08 82 12 21 45 4c f9 f0 8c 00 00 00 00 00 00 00 00  ..!EL...........
+     00007ffc93a66a18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66a28 c0 23 41 00 00 00 00 00                          .#A.....        
+    Possible instruction pointers:
+
+ 8  app + 0x123c0
+    rsp = 0x00007ffc93a66a30   rip = 0x00000000004123c0
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a66a30 88 6a a6 93 fc 7f 00 00 01 00 00 00 00 00 00 00  .j..............
+     00007ffc93a66a40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+     00007ffc93a66a50 30 1d 40 00 00 00 00 00                          0.@.....        
+    Possible instruction pointers:
+
+ 9  app + 0x1d30
+    rsp = 0x00007ffc93a66a58   rip = 0x0000000000401d30
+    Found by: stack scanning
+
+    Stack contents:
+     00007ffc93a66a58 80 6a a6 93 fc 7f 00 00 00 00 00 00 00 00 00 00  .j..............
+     00007ffc93a66a68 59 1d 40 00 00 00 00 00                          Y.@.....        
+    Possible instruction pointers:
+
+10  app + 0x1d59
+    rsp = 0x00007ffc93a66a70   rip = 0x0000000000401d59
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x00417fff  app  ???  (main)  (WARNING: No symbols, app, 59B41E8BA39EB67951F8D8CA60645DF10)
+0x7f98b6254000 - 0x7f98b635afff  libm-2.21.so  ???
+0x7f98b655c000 - 0x7f98b671bfff  libc-2.21.so  ???  (WARNING: No symbols, libc-2.21.so, CF43CD8AA9746C75D727B8516B08679E0)
+0x7f98b6926000 - 0x7f98b693bfff  libgcc_s.so.1  ???
+0x7f98b6b3d000 - 0x7f98b6caefff  libstdc++.so.6.0.21  ???
+0x7f98b6ebf000 - 0x7f98b6ed6fff  libpthread-2.21.so  ???
+0x7f98b70dd000 - 0x7f98b7100fff  ld-2.21.so  ???  (WARNING: No symbols, ld-2.21.so, A6B73B90EFDE66D9DCEEC4566C70444C0)
+0x7ffc93b20000 - 0x7ffc93b21fff  linux-gate.so  ???
