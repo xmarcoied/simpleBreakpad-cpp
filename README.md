@@ -24,12 +24,14 @@ simple c++ application integrated with the crashrepoting lib google breakpad
 
 
 3 - Linking the generated library with the app.cpp and compile them
-``` $ cd ..  ```
 
 ``` $ make ```
 
 
 4 - run the buggy application to generate the minidumps 
+
+``` $ cd ..  ```
+
 
 ``` $ make run ```
 
