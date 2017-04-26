@@ -7,6 +7,8 @@ simple c++ application integrated with the crashrepoting lib google breakpad
 
 ``` $ git clone https://github.com/xMarcoied/simpleBreakpad-cpp ```
 
+``` $ cd simpleBreakpad-cpp ```
+
 2-a - downloading the breakpad library
 
 ``` $ git clone https://chromium.googlesource.com/breakpad/breakpad ```
@@ -16,12 +18,13 @@ simple c++ application integrated with the crashrepoting lib google breakpad
 
 ( This will generate libbreakpad.a and libbreakpad_client.a into the src folder )
 
-``` $ cd simpleBreakpad-cpp ```
+``` $ cd breakpad ```
 
 ``` $ ./configure && make  ```
 
 
 3 - Linking the generated library with the app.cpp and compile them
+``` $ cd ..  ```
 
 ``` $ make ```
 
